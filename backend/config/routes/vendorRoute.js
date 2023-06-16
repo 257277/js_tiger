@@ -4,12 +4,24 @@ const { VendorModel } = require("../Model/vendorModel");
 
 const vendorRoute = express.Router();
 
-
-vendorRoute.get("/allvendor/:page", async (req, res) => {
-    let page = req.params.page;
+vendorRoute.get("/allvendor", async (req, res) => {
     try {
         let data = await VendorModel.find();
-        res.send(data);
+        res.send({ "data": data });
+    }
+    catch (err) {
+        res.send(err);
+    }
+})
+
+vendorRoute.get("/allvendor/:page", async (req, res) => {
+    try {
+        // let totaldata = await VendorModel.find();
+        // res.send(data);
+        let page = Number(req.params.page);
+        let limit = 2;
+        const data = await VendorModel.find().skip(page * limit).limit(limit);
+        res.send({ "data": data });
     }
     catch (err) {
         res.send(err);

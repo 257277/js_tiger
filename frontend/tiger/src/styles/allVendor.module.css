@@ -1,0 +1,68 @@
+.vendorCard {
+    border: 1px solid black;
+    margin-top: 30px;
+    text-align: center;
+    padding: 20px;
+}
+
+.vendor_name {
+    font-size: 30px;
+}
+
+.ebtn {
+    width: 100px;
+    height: 30px;
+    font-size: 20px;
+    background-color: rgb(81, 81, 151);
+    color: white;
+    border-radius: 5px;
+    margin-right: 30px;
+    margin-top: 20px;
+}
+
+.pth {
+    text-align: center;
+    font-size: 20px;
+}
+
+.dbtn {
+    width: 100px;
+    height: 30px;
+    font-size: 20px;
+    background-color: rgb(193, 100, 100);
+    color: white;
+    border-radius: 5px;
+    margin-right: 30px;
+    margin-top: 20px;
+
+}
+
+.heading {
+    font-size: 30px;
+    text-align: center;
+
+}
+
+.prevbtn {
+    width: 100px;
+    height: 30px;
+    font-size: 20px;
+    background-color: rgb(81, 81, 151);
+    color: white;
+    border-radius: 5px;
+    margin-left: 50px;
+    float: left;
+    margin-top: 20px;
+}
+
+.nextbtn {
+    width: 100px;
+    height: 30px;
+    font-size: 20px;
+    background-color: rgb(193, 100, 100);
+    color: white;
+    border-radius: 5px;
+    margin-right: 30px;
+    float: right;
+    margin-top: 20px;
+}

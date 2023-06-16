@@ -1,0 +1,21 @@
+.container {
+
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.Heading {
+    font-size: 30px;
+}
+
+.btn {
+    width: 150px;
+    background-color: rgb(77, 77, 147);
+    color: white;
+    font-size: 20px;
+    height: 30px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
