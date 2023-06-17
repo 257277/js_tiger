@@ -9,7 +9,7 @@ export default function Page() {
 
     useEffect(() => {
 
-        axios.get(`http://localhost:4500/vendor/allvendor/${page}`).then((res) => {
+        axios.get(`https://creepy-crow-battledress.cyclic.app/vendor/allvendor/${page}`).then((res) => {
 
             setdt(res.data.data);
         })
@@ -41,7 +41,7 @@ export default function Page() {
                             }}>Edit</button>
                             <button className={styles.dbtn} id={item._id} onClick={(event) => {
                                 let id = event.target.id;
-                                axios.delete(`http://localhost:4500/vendor/deletevendor/${id}`).then((res) => {
+                                axios.delete(`https://creepy-crow-battledress.cyclic.app/vendor/deletevendor/${id}`).then((res) => {
                                     alert(res.data);
 
                                 })

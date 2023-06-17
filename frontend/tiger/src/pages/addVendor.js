@@ -17,7 +17,7 @@ export default function Page() {
         let zip_code = data.zcode;
         let obj = { vendor_name, bank_account_no, bank_name, address_line1, address_line2, city, country, zip_code };
 
-        axios.post('http://localhost:4500/vendor/postvendor', obj)
+        axios.post('https://creepy-crow-battledress.cyclic.app/vendor/postvendor', obj)
             .then(async function (response) {
                 alert(response.data);
             })

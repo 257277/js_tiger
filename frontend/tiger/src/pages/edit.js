@@ -8,7 +8,7 @@ export default function Page() {
     const [id, setid] = useState("");
     useEffect(() => {
 
-        axios.get(`http://localhost:4500/vendor/allvendor`).then((res) => {
+        axios.get(`https://creepy-crow-battledress.cyclic.app/vendor/allvendor`).then((res) => {
             // console.log(res.data.data);
             setdata(res.data.data);
 
@@ -42,7 +42,7 @@ export default function Page() {
                     let zip_code = document.querySelector("#zcode").value;
                     let obj = { vendor_name, bank_account_no, bank_name, address_line1, address_line2, city, country, zip_code };
                     // console.log(setdt);
-                    axios.patch(`http://localhost:4500/vendor/editvendor/${id}`, obj)
+                    axios.patch(`https://creepy-crow-battledress.cyclic.app/vendor/editvendor/${id}`, obj)
                         .then(async function (response) {
                             alert(response.data);
                         })
